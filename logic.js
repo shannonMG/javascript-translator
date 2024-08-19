@@ -9,8 +9,8 @@ let deck = [
      {index: 2,
      prompt: "Translate this action into JavaScript: An event listener is being added to the element 'button'.  It listens for a click and then runs a function. ",  
      response: "button.addEventListener('click' , function () {};"
-     };
-    ];
+     },
+];
 
 const cardKey = 'cards';
 
