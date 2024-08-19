@@ -7,17 +7,23 @@
     <link rel="stylesheet" href="./style/flip.css">
 </head>
 <body>
-    <div class="card-container">
+    <section class="card-container">
         <div class="card">
             <div class="front">
-                <h2>This is so much harder than it looks.</h2>
+                <h2><!-- directions will be inserted here --></h2>
+                <p><!-- prompt will be inserted here --></p>
+                
             </div>
             <div class="back">
-                <h2>You don't say.</h2>
+                <!-- Response will be inserted here -->
             </div>
         </div>
-    </div>
-    <button id="flip-button">Flip Card</button>
-    <script src="./style/flip.js"></script>
+    </section>
+    <section>
+        <button id="next">Next Card</button>
+        <button id="remove">Remove This Card From Deck</button>
+    </section>
+    <input type=text id="user-response"></input>
+    <script src="./style/cardflip.js"></script>
 </body>
 </html>
