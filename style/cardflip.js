@@ -4,7 +4,7 @@ let deck = [
     {
       index: 1,
       directions: "Translate this code snippet to explicit English",
-      prompt: "Translate this code snippet to explicit English: const carousel = document.querySelector('.carouselbox');",
+      prompt: "const carousel = document.querySelector('.carouselbox');",
       response: "The variable carousel is assigned to the first element in the document with the class name 'carouselbox'."
     },
     {
@@ -77,11 +77,24 @@ let deck = [
     });
     
     document.querySelector('#remove').addEventListener('click', function() {
-      if (currentCard) {
-        completedCard(currentCard); // Pass the current card to mark it as completed
-        loadRandomCard();           // Load a new card after marking the current one
-      }
+      const confirmRemoveModal = new bootstrap.Modal(document.getElementById('confirmRemoveModal'));
+      confirmRemoveModal.show();
+    
     });
+
+    document.querySelector('#confirmRemoveButton').addEventListener('click', function() {
+      if (currentCard) {
+          completedCard(currentCard); // Pass the current card to mark it as completed
+          console.log('hiding modal now');
+
+          $('#confirmRemoveModal').hide();
+          $('.modal-backdrop').hide();
+          
+          loadRandomCard();           // Load a new card after marking the current one
+  
+          
+      }
+  });
   
     loadRandomCard(); // Load the first random card when the page loads
   });
