@@ -31,7 +31,7 @@ body {
     color: #FFF;
     text-align: center;
     font-family: "Helvetica Neue";
-    font-size: 52px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -49,7 +49,7 @@ p {
     color: #FFF;
     text-align: center;
     font-family: "Helvetica Neue";
-    font-size: 40px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -60,7 +60,7 @@ p {
     padding-bottom: 24px;
 }
 
-button {
+/* button {
     display: flex;
     width: 318px;
     padding: 16px;
@@ -71,7 +71,7 @@ button {
     background: #EA9B3C;
     justify-content: center;
     margin: 0 auto;
-}
+} */
 
 .gradient {
     background: linear-gradient(180deg, #00273E 32%, #0069A4 100%);
@@ -80,3 +80,27 @@ button {
     
 }
 
+.btn-primary-custom {
+    display: flex !important;
+    width: 318px !important;
+    padding: 12px !important;
+    justify-content: center !important;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: #EA9B3C !important;
+    justify-content: center;
+    margin: 0 auto;
+    color: #FFF !important;
+    text-align: center !important;
+    font-family: "Helvetica Neue" !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+}
+
+.btn-primary-custom:hover {
+    background-color: #e64a19 !important;
+    border-color: #e64a19;
+  }
