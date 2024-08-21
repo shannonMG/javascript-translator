@@ -12,7 +12,20 @@ let deck = [
       directions: "Translate this action into JavaScript:",
       prompt: " An event listener is being added to the element 'button'. It listens for a click and then runs a function.",
       response: "button.addEventListener('click', function () {});"
-    }
+    },
+    {
+      index: 3,
+      directions: "Translate this action into JavaScript:",
+      prompt: "The variable carousel is assigned to the first element in the document with the class name 'carouselbox'.",
+      response: "const carousel = document.querySelector('.carouselbox');"
+    },
+    {
+      index: 4,
+      directions: "Translate this code snippet to explicit English",
+      prompt: "button.addEventListener('click', function () {});",
+      response: "An event listener is being added to the element 'button'. It listens for a click and then runs a function."
+    },
+ 
   ];
   
   const cardKey = 'cards';
@@ -60,9 +73,11 @@ let deck = [
     if (availableDeck.length > 0) {
       const randomIndex = Math.floor(Math.random() * availableDeck.length);
       currentCard = availableDeck[randomIndex]; // Set the current card
+      const cardElement= document.querySelector('.card');
+      cardElement.classList.remove('flip');
       displayCardData(currentCard); // Display the current card's data
     } else {
-      alert("All cards have been completed!");
+      window.location.href = './congradulations.html';
     }
   }
   
