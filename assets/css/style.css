@@ -51,7 +51,7 @@ p {
     font-family: "Helvetica Neue";
     font-size: 32px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400px;
     line-height: normal;
     justify-content: center;
     text-align: center;
@@ -83,11 +83,11 @@ p {
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     height: 100%;
     padding: 16px;
+    padding-top: 100px;
 }
 
 .btn-primary-custom {
@@ -114,3 +114,22 @@ p {
     background-color: #e64a19 !important;
     border-color: #e64a19;
   }
+
+@media (max-width: 768px) {
+    .btn-primary-custom {
+        width: 200px !important;
+        font-size: 14px !important;
+    }
+
+    .title {
+        font-size: 32px !important;
+    }
+
+    p {
+        font-size: 24px !important;
+    }
+
+    .logo {
+        font-size: 26px !important;
+    }
+}
