@@ -62,4 +62,26 @@ body {
     transform: rotateY(180deg);
 }
 
+.input-group {
+    max-width: 700px;
+}
 
+@media (max-width: 768px) {
+    .card {
+        width: 200px !important;
+        font-size: 14px !important;
+    }
+
+    .input-group {
+        max-width: 300px;
+        
+    }
+
+    p {
+        font-size: 24px !important;
+    }
+
+    .logo {
+        font-size: 26px !important;
+    }
+}
