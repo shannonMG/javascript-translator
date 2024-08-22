@@ -42,7 +42,7 @@ body {
 
 p {
     display: flex;
-    width: 66%;
+    /* width: 66%; */
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
