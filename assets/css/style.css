@@ -76,7 +76,6 @@ button {
 .gradient {
     background: linear-gradient(180deg, #00273E 32%, #0069A4 100%);
     height: 100vh;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -90,3 +89,22 @@ button {
     padding: 16px;
 }
 
+ .flex-container {
+    position: absolute;
+    top: 60px;
+    left: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;  
+    padding: 16px;
+    width: 250px;
+}
+
+ .column {
+    width: 100%;
+    color: white;
+    padding: 16px;
+    margin-right: 16px;
+  } 
