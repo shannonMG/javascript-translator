@@ -77,7 +77,7 @@ let deck = [
       cardElement.classList.remove('flip');
       displayCardData(currentCard); // Display the current card's data
     } else {
-      window.location.href = './congradulations.html';
+      window.location.href = './congratulations.html';
     }
   }
   
