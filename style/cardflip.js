@@ -199,13 +199,6 @@ let deck = [
       prompt: "Create a variable named message and assign it the value 'Success'.",
       response: "let message = 'Success';"
     },
-    {
-      index: 34,
-      directions: "Translate this action into JavaScript",
-      prompt: "Create a function named calculate that takes two parameters, a and b, and returns their sum.",
-      response: "function calculate(a, b) { return a + b; }"
-    }
-
   ];
   
   const cardKey = 'cards';
